@@ -1,6 +1,7 @@
 # Justin Kelly — Portfolio
 
 Minimal portfolio website with a GitHub Actions workflow that builds and deploys automatically on every push.
+
 https://justinkellydev.github.io/justin-kelly-portfolio/
 
 ## Tech Stack
