@@ -2,7 +2,7 @@
 
 Minimal portfolio website with a GitHub Actions workflow that builds and deploys automatically on every push.
 
-https://justinkellydev.github.io/justin-kelly-portfolio/
+https://justinkellydev.github.io/portfolio/
 
 ## Tech Stack
 
@@ -14,24 +14,28 @@ https://justinkellydev.github.io/justin-kelly-portfolio/
 
 ```
 portfolio/
-├── index.html              # HTML entry point
-├── vite.config.js          # Vite + React plugin config
+├── index.html                        # HTML entry point
+├── vite.config.js                    # Vite config — set `base` to match your repo name
 ├── package.json
+├── .gitignore
+└── .github/
+│   └── workflows/
+│       └── deploy.yml                # GitHub Actions — auto-deploys on push to main
 └── src/
-    ├── main.jsx            # React DOM entry point
-    ├── App.jsx             # Root component, nav state
-    ├── index.css           # Global resets + font imports + keyframes
-    ├── data.js             # All content: stack, projects, tag colors
+    ├── main.jsx                      # React DOM entry point
+    ├── App.jsx                       # Root component, nav state
+    ├── index.css                     # Global resets + font imports + keyframes
+    ├── data.js                       # All content: stack, projects, tag colors
     ├── hooks/
-    │   └── useInView.js    # IntersectionObserver hook for scroll animations
+    │   └── useInView.js              # IntersectionObserver hook for scroll animations
     ├── components/
-    │   ├── Nav.jsx         # Fixed navbar with scroll-aware styling
-    │   └── FadeIn.jsx      # Scroll-triggered fade-up wrapper
+    │   ├── Nav.jsx                   # Fixed navbar with scroll-aware styling
+    │   └── FadeIn.jsx                # Scroll-triggered fade-up wrapper
     └── sections/
-        ├── Hero.jsx        # Landing screen with CTA buttons
-        ├── Stack.jsx       # Tech stack grid
-        ├── Projects.jsx    # Project cards with tags + links
-        └── Contact.jsx     # Email copy + social links
+        ├── Hero.jsx                  # Landing screen with CTA buttons
+        ├── Stack.jsx                 # Tech stack grid
+        ├── Projects.jsx              # Project cards with tags + links
+        └── Contact.jsx               # Email copy + social links
 ```
 
 ## Getting Started
