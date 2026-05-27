@@ -25,7 +25,7 @@ export default function Nav({ active, onNav }) {
         fontSize: '14px', letterSpacing: '0.12em', color: '#a3e635',
         textTransform: 'uppercase', fontWeight: 500,
       }}>
-        justinkelly.dev
+        Justin Kelly
       </span>
       <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
         {NAV_LINKS.map(link => (
